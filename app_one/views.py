@@ -18,8 +18,8 @@ def make_password(password, user_id=25, user_name="helloworld"):
     alphabit = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z".split(",")
     numbers = "1,2,3,4,5,6,7,8,9,0".split(",")
     symbols = "!,@,#,$,&,*,%,(,),?,},[,{,],؟,~".split(",")
-    rand_num_one = 67
-    rand_num_two = 87
+    rand_num_one = special_num
+    rand_num_two = special_num2
     ultra_num = rand_num_one + user_id
     length = len(user_name)
 
@@ -49,7 +49,7 @@ def check_password(password, r_password):
     alphabit = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z".split(",")
     symbols = "!,@,#,$,&,*,%,(,),?,},[,{,],؟,~".split(",")
     split_v = r_password.split("-")
-    rand_num = 87
+    rand_num = special_num2
     unique_num = int(int(split_v[-1])/rand_num)
     decrypted_password = ""
     i=0
