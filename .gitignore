@@ -1,0 +1,7 @@
+frontend
+app_frontend
+media_files
+
+frontend/*
+app_frontend/*
+media_files/*
